@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kollázs Kép</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
 
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            grid-gap: 10px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        .collage img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .caption {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="collage">
+        <!-- Te magad -->
+        <div>
+            <img src="rólam" alt="rólam">
+            <div class="caption">én</div>
+        </div>
+
+        <!-- Hobbi / kedvenc dolog 1 -->
+        <div>
+            <img src="labda.avif" alt="labda.">
+            <div class="caption">foci</div>
+        </div>
+
+        <!-- Hobbi / kedvenc dolog 2 -->
+        <div>
+            <img src="kosárlabda.webp" alt="kosárlabda">
+            <div class="caption">kósárlabda</div>
+        </div>
+
+        <!-- Hobbi / kedvenc dolog 3 -->
+        <div>
+            <img src="ps5.webp" alt="ps5">
+            <div class="caption">játszás</div>
+        </div>
+
+        <!-- Hobbi / kedvenc dolog 4 -->
+        <div>
+            <img src="apple music.png" alt="music">
+            <div class="caption">zenehallgatás</div>
+        </div>
+
+        <!-- Hobbi / kedvenc dolog 5 -->
+        <div>
+            <img src="stadion.webp" alt="stadion">
+            <div class="caption">meccsnézés</div>
+        </div>
+    </div>
+</body>
+</html>
